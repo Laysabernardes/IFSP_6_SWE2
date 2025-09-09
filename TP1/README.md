@@ -1,4 +1,4 @@
-# Trabalho Prático 01: Tela de Login em .NET MAUI
+# Trabalho Prático 01: 
 Atividade consiste em um sistema simples para gerenciar e exibir informações sobre livros.  
 
 ## ✨ Rotas:
