@@ -7,4 +7,4 @@
 
 | Trabalho Prático | Pasta   | URL no GitHub                                                      | Data da Entrega |
 | ---------------- | ------- | ------------------------------------------------------------------ | --------------- |
-| TP1              | `./TP1` | [TP1](https://github.com/Laysabernardes/IFSP_6_SWE1tree/main/TP1) | 09/09/2025      |
+| TP1              | `./TP1` | [TP1](https://github.com/Laysabernardes/IFSP_6_SWE2tree/main/TP1) | 09/09/2025      |
