@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\controller\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:controller\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|c:\\users\\pxoes\\documents\\prof_tuler\\cbtswe2-main\\cbtswe2_tp01\\cbtswe2\\cbtswe2_tp01\\repository\\bookrepositorycsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{313ED497-5780-4CC6-8510-D66032ABBD27}|TP01.csproj|solutionrelative:repository\\bookrepositorycsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Model\\Book.cs",
+              "RelativeDocumentMoniker": "Model\\Book.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Model\\Book.cs",
+              "RelativeToolTip": "Model\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:54:44.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookRepositoryCsv.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Repository\\BookRepositoryCsv.cs",
+              "RelativeDocumentMoniker": "Repository\\BookRepositoryCsv.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Repository\\BookRepositoryCsv.cs",
+              "RelativeToolTip": "Repository\\BookRepositoryCsv.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:48:44.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:49:21.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:52:04.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Model\\Author.cs",
+              "RelativeDocumentMoniker": "Model\\Author.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Model\\Author.cs",
+              "RelativeToolTip": "Model\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:54:49.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Interface\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "Interface\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Interface\\IBookRepository.cs",
+              "RelativeToolTip": "Interface\\IBookRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T21:54:56.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Controller\\BookController.cs",
+              "RelativeDocumentMoniker": "Controller\\BookController.cs",
+              "ToolTip": "C:\\Users\\pxoes\\Documents\\prof_Tuler\\CBTSWE2-main\\CBTSWE2_tp01\\CBTSWE2\\CBTSWE2_tp01\\Controller\\BookController.cs",
+              "RelativeToolTip": "Controller\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T22:57:26.884Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,29 +8,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TP1.Controllers;
+using TP01.Controller;
 
-namespace TP1
+// Laysa Bernardes Campos da Rocha -  CB3024873
+// Lucas Lopes Cruz - CB3025284
+
+namespace TP01
 {
-    internal class Startup
+    public class Startup
     {
         public void Configure(IApplicationBuilder app)
         {
+
             var builder = new RouteBuilder(app);
+
             var controller = new BookController();
 
-            builder.MapGet("livro/nome", controller.GetBookName);
-            builder.MapGet("livro", controller.GetBookToString);
-            builder.MapGet("livro/autores", controller.GetBookAuthorNames);
-            builder.MapGet("livro/apresentar", controller.ApresentarLivro);
-
-            builder.DefaultHandler = new RouteHandler(context =>
-            {
-                context.Response.StatusCode = 404;
-                return context.Response.WriteAsync("Rota não encontrada.");
-            });
+            builder.MapRoute("livro/nome", controller.GetNameBook);
+            builder.MapRoute("livro", controller.GetBook);
+            builder.MapRoute("livro/autores", controller.GetAuthorsBook);
+            builder.MapRoute("livro/ApresentarLivro", controller.GetHtmlBook);
 
             var routes = builder.Build();
+
             app.UseRouter(routes);
         }
 
