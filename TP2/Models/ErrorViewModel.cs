@@ -1,4 +1,4 @@
-namespace TP2.Models
+namespace CBTSWE2_TP02.Models
 {
     public class ErrorViewModel
     {

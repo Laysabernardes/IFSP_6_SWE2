@@ -1,31 +1,32 @@
+using CBTSWE2_TP02.Data;
 using Microsoft.EntityFrameworkCore;
-using TP2.Models; // importa o ApplicationDbContext e os Models
+
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Configuração do banco de dados (SQLite para facilitar)
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// Adiciona suporte a Controllers e Views (MVC)
+// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AppDbContext>(options => 
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
-// Configuração do pipeline HTTP
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    app.UseHsts(); // segurança: força HTTPS com HSTS
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // habilita uso de CSS, JS e imagens (wwwroot)
+app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseAuthorization();
 
-// Configuração das rotas
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

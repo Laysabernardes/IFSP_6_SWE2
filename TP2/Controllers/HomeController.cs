@@ -1,9 +1,10 @@
 using System.Diagnostics;
+using CBTSWE2_TP02.Models;
 using Microsoft.AspNetCore.Mvc;
-using TP2.Models;
 
-namespace TP2.Controllers
+namespace CBTSWE2_TP02.Controllers
 {
+    //Desenvolvido por Laysa Bernardes e Lucas Lopes
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

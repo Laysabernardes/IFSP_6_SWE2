@@ -1,81 +1,96 @@
+﻿using CBTSWE2_TP02.Data;
+using CBTSWE2_TP02.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
-using TP2.Models;
 
-namespace TP2.Controllers
+namespace CBTSWE2_TP02.Controllers
 {
+    //Desenvolvido por Laysa Bernardes e Lucas Lopes
     public class ContainerController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public ContainerController(ApplicationDbContext context)
+        private readonly AppDbContext _context;
+        public ContainerController(AppDbContext context)
         {
             _context = context;
         }
 
+        private List<SelectListItem> GetListaDeBLs()
+        {
+            var selectBl = _context.BLs
+                .Select(b => new SelectListItem
+                {
+                    Value = b.Id.ToString(),
+                    Text = $"{b.Numero} - {b.Consignee}"
+                })
+                .ToList();
+            return selectBl;
+        }
         public IActionResult Index()
         {
-            var containers = _context.Containers.Include(c => c.BL).ToList();
-            return View(containers);
+            Container[] listaContainers = _context.Containers.ToList().ToArray();
+            return View(listaContainers);
         }
 
         public IActionResult Create()
         {
-            ViewBag.BLId = new SelectList(_context.BLs, "Id", "NumeroBL");
+            var bls = GetListaDeBLs();
+            ViewBag.BLs = bls;
             return View();
+        }
+
+        public IActionResult Edit(int id) {
+            Container? containerEncontrado = _context.Containers.Find(id);
+            if (containerEncontrado == null) return NotFound();
+
+            ViewBag.BLs = GetListaDeBLs();
+            return View(containerEncontrado);
         }
 
         [HttpPost]
         public IActionResult Create(Container container)
         {
-            if (ModelState.IsValid)
+            try
             {
                 _context.Containers.Add(container);
                 _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
+                
             }
-            ViewBag.BLId = new SelectList(_context.BLs, "Id", "NumeroBL", container.BLId);
-            return View(container);
-        }
-
-        public IActionResult Edit(int id)
-        {
-            var container = _context.Containers.Find(id);
-            ViewBag.BLId = new SelectList(_context.BLs, "Id", "NumeroBL", container.BLId);
-            return View(container);
+            catch(Exception ex)
+            {
+                Console.Write("Erro ao criar container: " + ex);
+                ModelState.AddModelError(string.Empty, "Ocorreu um erro ao salvar o container. Por favor, tente novamente.");
+                var bls = GetListaDeBLs();
+                ViewBag.BLs = bls;
+                return View(container);
+            }
         }
 
         [HttpPost]
         public IActionResult Edit(Container container)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Containers.Update(container);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewBag.BLId = new SelectList(_context.BLs, "Id", "NumeroBL", container.BLId);
-            return View(container);
+            Container? containerEncontrado = _context.Containers.Find(container.Id);
+            if (containerEncontrado == null) return NotFound();
+
+            containerEncontrado.Numero = container.Numero;
+            containerEncontrado.Tipo = container.Tipo;
+            containerEncontrado.Tamanho = container.Tamanho;
+            containerEncontrado.BLId = container.BLId;
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
-        public IActionResult Delete(int id)
-        {
-            var container = _context.Containers.Find(id);
-            return View(container);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var container = _context.Containers.Find(id);
-            if (container != null)
-            {
-                _context.Containers.Remove(container);
-                _context.SaveChanges();
-            }
-            return RedirectToAction(nameof(Index));
+        public IActionResult Delete(int id) {
+            Container? containerEncontrado = _context.Containers.Find(id);
+            
+            if (containerEncontrado == null) return NotFound();
+            
+            _context.Containers.Remove(containerEncontrado);
+            _context.SaveChanges();
+            
+            return RedirectToAction("Index");
         }
     }
 }
