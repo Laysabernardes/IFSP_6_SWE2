@@ -1,0 +1,15 @@
+﻿using CBTSWE2_TP03.Models;
+
+//Desenvolvido por Laysa Bernardes e Lucas Lopes
+
+namespace CBTSWE2_TP03.Repositories
+{
+    public interface IProdutoRepository
+    {
+        Task<IEnumerable<Produto>> GetProdutos();
+        Task<Produto> GetProdutoById(int id);
+        Task AddProduto(Produto produto);
+        Task UpdateProduto(Produto produto);
+        Task DeleteProduto(int id);
+    }
+}
