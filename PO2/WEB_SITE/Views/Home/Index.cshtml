@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="col-md-5 col-lg-4">
+        <h2 class="text-center mb-5">Sistema de Produtos</h2>
+
+        <form id="loginForm" method="post" asp-controller="Home" asp-action="Login">
+
+            <div class="mb-4">
+                <label for="inputNome" class="form-label visually-hidden">Nome de Usuário:</label>
+                <input type="text"
+                       class="form-control form-control-lg"
+                       id="inputNome"
+                       name="Nome"
+                       placeholder="Nome de Usuário"
+                       required>
+            </div>
+
+            <div class="mb-4">
+                <label for="inputSenha" class="form-label visually-hidden">Senha:</label>
+                <input type="password"
+                       class="form-control form-control-lg"
+                       id="inputSenha"
+                       name="Senha"
+                       placeholder="Senha"
+                       required>
+            </div>
+
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="text-danger mb-4 text-center" style="display: block;">
+                    @ViewData["ErrorMessage"]
+                </div>
+            }
+            else
+            {
+                <div class="mb-4"></div>
+            }
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
+            </div>
+        </form>
+    </div>
+</div>
