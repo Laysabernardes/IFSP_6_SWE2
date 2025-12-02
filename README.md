@@ -11,3 +11,4 @@
 | TP2              | `./TP2` | [TP2](https://github.com/Laysabernardes/IFSP_6_SWE2/tree/main/TP2) | 23/09/2025      | 
 | TP3              | `./TP3` | [TP3](https://github.com/Laysabernardes/IFSP_6_SWE2/tree/main/TP3) | 04/11/2025      | 
 | TP4              | `./TP4` | [TP4](https://github.com/Laysabernardes/IFSP_6_SWE2/tree/main/TP4) | 25/11/2025      | 
+| P02              | `./PO2` | [TP4](https://github.com/Laysabernardes/IFSP_6_SWE2/tree/main/PO2) | 02/12/2025      | 
